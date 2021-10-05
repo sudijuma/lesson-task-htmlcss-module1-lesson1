@@ -6,10 +6,10 @@ html {
   padding: 0;
 }
 
-.my_header {
-  display: inline-block;
-  background-color: black;
-  height: 48px;
+.my-header {
+  display: inline-flex;
+  background-color:white;
+  height: 80px;
 }
 
 header span {
@@ -20,7 +20,7 @@ header span {
 
 .navigation ul {
   margin: 0;
-  padding: 0%;
+  padding: 1%;
   list-style: none;
 }
 
@@ -29,8 +29,8 @@ header span {
   margin-right: 20px;
 }
 
-.navigation ul li a {
-  color: rgb(20, 20, 18);
+.navigation a {
+  color: blue;
   text-decoration: none;
 }
 
@@ -43,16 +43,55 @@ header span {
 }
 
 .inner {
-  width: 1080px;
+  width: 1920px;
   margin: 0 auto;
   border: 1px red;
 }
+
+/*
+general selection:
+any anchor tag that inside .navigation
+will be yellow
+/*
 
 /* 
     margin: 0 0 0 0;
     margin: TOP RIGHT BOTTOM LEFT;
 */
 
+/* direct descendant of .navigation */
+
+.navigation > a {
+  color: blue;
+  border: 5px dotted yellow;
+  padding: 10px;
+}
+
 .footer {
   background-color: aqua;
+}
+
+#home-page h1 {
+  color: red;
+}
+
+body#guitar-page {
+  background-color:rgb(231, 234, 238);
+}
+
+#guitar-page h1 {
+  color: lightgreen;
+  font-size: 50;
+}
+
+.our-guitars {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50%;
+}
+
+#home-page h2 {
+  color: black;
+  font-size: 20;
+  font-weight: 500;
 }
